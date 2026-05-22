@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbaar{
+    border: 2px solid black;
+    /* height: 30vh; */
+    /* width: 20%; */
+    max-width: 420px;
+width: 90%;
+    margin: 25px auto;
+    margin-bottom: 0px;
+    border-bottom: none;
+    display: flex;
+      border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+    /* align-items: center; */
+    justify-content: center;
+}
+.image{
+/* border: 1px solid black;
+    border-radius: 9px; */
+    background-image: url("https://tse1.mm.bing.net/th/id/OIP.hWUanFPz_WnHPlmjKmye0AHaEo?pid=Api&P=0&h=180");
+    height: 300px;
+    width: 421px;
+    border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+    background-position: center ;
+    background-size: cover;
+}
+/**main**/
+.hero-section{
+    display: flex;
+    /* justify-content: center; */
+    margin: auto;
+    border: 2px solid black;
+    /* height: 30vh; */
+   max-width: 420px;
+width: 90%;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: antiquewhite;
+   font-size: .85rem;
+ 
+}
+ul{
+    display: flex;
+    align-items: center;
+   gap: 20px;
+  padding: 5px;
+}
+h2{
+   margin: 10px 5px 5px 5px;
+}
+
+ul li{
+    list-style: none;
+}
+p{
+    text-align: center;
+}
+.capsules{
+     display: flex;
+     align-items: center;
+   padding: 10px;
+     gap: 8px;
+    
+}
+.capsules button{
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    color: rgb(75, 74, 74);
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.price button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffce12;
+    color: rgb(75, 74, 74);
+    border: none;
+    transition: 0.3s ease ;
+    
+    box-shadow: 5px 8px 5px rgb(211, 210, 210);
+}
+.price button:hover{
+    color: white;
+    background-color: rgb(133, 246, 246);
+    transform: translateX(-10px);
+    
+}
+@media(max-width:1081px) {
+   
+    .hero-section{
+        flex-direction: column ;
+        height: 40vh;
+    }
+    h2{
+        text-align: center;
+    }
+   ul {
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+    }
+    .capsules{
+         flex-direction: column;
+        gap: 5px;
+    }
+    .price{
+        flex-direction: column;
+    }
+}

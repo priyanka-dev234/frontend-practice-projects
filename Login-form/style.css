@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#dfcaea, #b35ab2);
+  
+   
+}
+.login-form{
+    height: 50vh;
+    max-width: 700px;
+    width:90%;
+    margin: auto;
+   margin-top: 5%;
+    border: 2px solid rgb(92, 91, 91);
+    border-radius: 7px;
+  box-shadow: 9px 14px 7px 1px rgba(206, 201, 201, 0.821);
+  display: flex;
+   align-items: center;
+  gap: 15px;
+  background-color:gainsboro;
+}
+.image{
+    background-image: url("https://tse1.mm.bing.net/th/id/OIP.DZ_RYKI3zh8iO67JTmrHlQHaE6?pid=Api&P=0&h=180");
+    height: 49.6vh;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    width: 45%;
+}
+.form{
+ color: rgb(85, 83, 83);
+ padding: 10px 0px;
+ 
+}
+h1{
+ padding: 10px;
+ color: brown; 
+}
+.email{
+   font-size: 1em;
+    padding: 10px;
+}
+input{
+    border-radius: 7px;
+   padding: 5px;
+}
+input:focus{
+    outline: none;
+    border: 2px solid purple;
+}
+.password{
+    padding: 10px;
+     font-size: 1em;
+}
+.btn{
+    padding: 10px;
+    text-align: center;
+   
+}
+.btn button{
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    background-color:darkgreen;
+    border: none;
+    font-size: 1em;
+    color: white;
+  box-shadow: 4px 3px 7px rgb(148, 212, 98);
+  .btn button{
+    transition: all 0.3s ease;
+}
+}
+.btn button:hover{
+   
+    background-color: rgb(220, 20, 163);
+    box-shadow: 4px 3px 7px rgb(226, 153, 236);
+    cursor: pointer;
+    transform: translateY(-8px);
+}
+.text{
+     font-size: 1em;
+    padding: 10px;
+}
+.text a{
+    text-decoration: none;
+    color: rgb(0, 85, 255);
+}
