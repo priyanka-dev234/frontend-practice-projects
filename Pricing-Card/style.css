@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #1b1b1b;
+    color: white;
+}
+h1{
+  text-align: center;
+  margin: 30px;
+}
+p{
+  text-align: center;
+  margin: 10px;
+}
+ .mon p i{
+  font-size: 1.25em;
+  color: blueviolet;
+}
+.year p i {
+  color: white;
+}
+.mon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.box p{
+  border-bottom: 1px solid rgb(213, 210, 210);
+  padding-bottom: 5px;
+}
+.box1, .box2, .box3{
+     border: 1px solid gray;
+    min-height: 50vh;
+    min-width: 145px;
+    width: 22%; 
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+/* box-shadow: 5px 5px 5px rgb(221, 221, 221); */
+transition: transform 0.3s ease;
+ display: flex;
+    flex-direction: column;
+}
+.box1:hover,
+.box2:hover,
+.box3:hover{
+    transform: scale(1.03);
+}
+.box1 button:hover,
+.box2 button:hover,
+.box3 button:hover{
+    transform: scale(1.03);
+}
+.box1 h2{
+  color: rgb(0, 128, 255);
+   text-align: center;
+}
+.box2 h2{
+  color: blueviolet;
+   text-align: center;
+}
+.box3 h2{
+  color: rgb(47, 192, 47);
+   text-align: center;
+}
+.box1:hover{
+   border: 2px solid  rgb(0, 128, 255);
+   
+}
+.box2:hover{
+  border: 2px solid blueviolet;
+}
+.box3:hover{
+  border: 2px solid rgb(47, 192, 47);
+}
+strong{
+  font-size: 2em;
+}
+ul{
+  padding: 10px;
+  font-size: .85em;
+  font-weight: 700;
+  color: rgb(246, 240, 240);
+}
+ul li{
+  list-style: none;
+  line-height: 1.55;
+}
+button{
+  padding: 9px 50px;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  font-size: 1em;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+.box1 button{
+  /* background-color: rgb(0, 128, 255); */
+  background: linear-gradient(90deg , rgb(0, 128, 255), rgb(51, 94, 249));
+}
+.box2 button{
+  /* background-color: blueviolet; */
+  /* margin-top: 11%; */
+  background: linear-gradient(90deg , blueviolet, rgb(236, 51, 249));
+}
+.box3 button{
+   /* margin-top: 22%; */
+   background: linear-gradient(90deg, rgb(47, 192, 47), rgb(51, 249, 180));
+}
+h3{
+  width: 50%;
+  padding: 10px;
+  font-size: .75em;
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  top: -23px;
+  left: 20%;
+}
+@media (max-width:860px) {
+    .box{
+        flex-direction: column;
+    }
+    .box1 , .box2, .box3{
+      width: 73%;
+    }
+    button{
+  padding: 4px;
+}
+}
